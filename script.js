@@ -1,7 +1,7 @@
 function firstChar(text) {
-  // your code here
-  if (text.charCodeAt(0) === " " || text.charCodeAt(0) === "") return "";
-  else return String.fromCharCode(text.charCodeAt(0));
+  for (let i = 0; i < text.length; i++)
+    if (text[i] !== " ") return text[i];
+  return "";
 }
 
 // Do not change the code below
